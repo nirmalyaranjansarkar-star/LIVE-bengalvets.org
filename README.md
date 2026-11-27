@@ -11,6 +11,12 @@ All words, names, fees, links live in **`src/content.ts`**. Edit it on GitHub (p
 - Theme song / jingle: `themeSongUrl`, `jingleUrl` (mp3 links)
 - Programme times: `programme` list
 - Sponsors: `sponsors` list (put logo files in `public/sponsors/`)
+- Videos: `videos` list (first one is shown as Featured). Thumbnails are saved in `public/img/` so YouTube loads only on click.
+- Photos: `gallery` list (images in `public/img/`, use .webp)
+- Policy pages (needed by the payment gateway): text in `src/pages.tsx`; pages: /about-us, /contact-us, /terms-and-conditions, /privacy-policy, /refund-and-cancellation-policy, /shipping-and-delivery-policy, /disclaimer
+
+## Security
+`public/_headers` sets strict security headers (CSP, HSTS preload, X-Frame-Options, Permissions-Policy, COOP/CORP). Fonts are self-hosted, no third-party scripts, no tracking cookies.
 
 ## Tech
 React 18 + TypeScript + Vite 5 + Tailwind CSS 3 + framer-motion. Static site, no backend, no API keys.
