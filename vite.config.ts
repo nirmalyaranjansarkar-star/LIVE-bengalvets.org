@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         notfound: resolve(__dirname, '404.html'),
+        register: resolve(__dirname, 'register.html'),
         ...Object.fromEntries(pages.map((p) => [p, resolve(__dirname, `${p}.html`)])),
       },
     },
