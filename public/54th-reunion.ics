@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//bengalvets.org//54th Reunion//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:54th-reunion-20270110@bengalvets.org
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:54th Reunion of Past & Present Students - Belgachia
+LOCATION:WBUAFS Main Campus\, 37 & 68 Kshudiram Bose Sarani\, Belgachia\, Kolkata 700037
+DESCRIPTION:Bengal Veterinary College (C.U.) & Faculty of Veterinary & Animal Sciences (BCKV & WBUAFS). https://bengalvets.org
+URL:https://bengalvets.org/
+END:VEVENT
+END:VCALENDAR
