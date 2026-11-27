@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { @apply bg-navy-900 text-ink font-sans antialiased; }
+::selection { background: #d4a63c; color: #0b1530; }
+:focus-visible { outline: 2px solid #e0b95a; outline-offset: 3px; border-radius: 6px; }
+.glass { @apply bg-navy-800/60 backdrop-blur-md border border-white/10 shadow-2xl shadow-black/40; }
+.gold-text { background: linear-gradient(180deg,#f3dc9c 0%,#d4a63c 55%,#a9801f 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn-gold { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold text-navy-900 shadow-lg shadow-gold-500/20; background: linear-gradient(180deg,#ecd08a,#d4a63c 60%,#b48a2a); }
+.btn-line { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold text-ink border border-gold-500/60 hover:bg-gold-500/10 transition-colors; }
+.eyebrow { @apply font-caps text-xs md:text-sm uppercase tracking-[0.3em] text-gold-400; }
+.grain { background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 3px 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
