@@ -8,14 +8,14 @@ const Org = () => <strong>{site.legalName}</strong>;
 const FeeTable = () => (
   <table>
     <thead><tr><th>Delegate category</th><th>Registration fee (INR)</th></tr></thead>
-    <tbody>{fees.map((f) => <tr key={f.label}><td>{f.label}</td><td>{f.amount}</td></tr>)}</tbody>
+    <tbody>{fees.map((f) => <tr key={f.label}><td>{f.label}</td><td>₹{f.amount.toLocaleString('en-IN')}</td></tr>)}</tbody>
   </table>
 );
 
 const Grievance = () => (
   <ul>
     <li><strong>Grievance Officer:</strong> {site.grievanceName}, {site.grievanceRole}</li>
-    <li><strong>E-mail:</strong> <Mail /></li>
+    <li><strong>E-mail:</strong> <a href={`mailto:${site.grievanceEmail}`}>{site.grievanceEmail}</a> (general: <Mail />)</li>
     <li><strong>Address:</strong> {site.legalAddress}</li>
     <li><strong>Help line:</strong> {site.contactName}, {site.contactRole} — <Tel /> (call / WhatsApp)</li>
   </ul>
